@@ -1,4 +1,4 @@
-from htmlnode import LeafNode
+from nodes.htmlnode import LeafNode
 import unittest
 
 class TestLeafNode(unittest.TestCase):
@@ -13,3 +13,6 @@ class TestLeafNode(unittest.TestCase):
         node = LeafNode(None, 'Hello, world', None)
         res = node.to_html()
         self.assertEqual(res, 'Hello, world')
+
+if __name__ == "__main__":
+    unittest.main()

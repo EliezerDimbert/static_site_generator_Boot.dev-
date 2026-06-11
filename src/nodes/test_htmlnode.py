@@ -1,5 +1,5 @@
 import unittest
-from htmlnode import HTMLNode
+from nodes.htmlnode import HTMLNode
 
 class TestHTMLNode(unittest.TestCase):
     def test_empty_eq(self):
@@ -14,3 +14,6 @@ class TestHTMLNode(unittest.TestCase):
         node = HTMLNode('tag', 'val', [HTMLNode()], {'href': 'https://www.google.com'})
         props_res = ' href="https://www.google.com"'
         self.assertEqual(node.props_to_html(), props_res)
+
+if __name__ == "__main__":
+    unittest.main()
