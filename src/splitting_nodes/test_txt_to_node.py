@@ -1,5 +1,5 @@
 import unittest
-from src.splitting_nodes.logic import text_to_textnodes
+from src.splitting_nodes.txt_to_node import text_to_textnodes
 from nodes.textnode import TextNode, TextType
 
 
