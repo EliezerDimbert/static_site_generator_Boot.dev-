@@ -1,5 +1,5 @@
-from nodes.textnode import TextNode
-from src.splitting_nodes.splitting import *
+from nodes.textnode import TextNode, TextType
+from .splitting import split_nodes_delimiter, split_nodes_image, split_nodes_link
 def text_to_textnodes(text:str) -> list[TextNode]:
     nodes = [TextNode(text, TextType.TEXT)]
     nodes = split_nodes_delimiter(nodes, '**', TextType.BOLD)
